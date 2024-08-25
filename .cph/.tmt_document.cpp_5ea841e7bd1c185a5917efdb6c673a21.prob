@@ -1,0 +1,1 @@
+{"name":"Local: tmt_document","url":"a:\\Desktop\\Nothing\\Random\\C\\tmt_document.cpp","tests":[{"id":1724505433705,"input":"5\n3\nTMT\n3\nMTT\n6\nTMTMTT\n6\nTMTTTT\n6\nTTMMTT\n","output":"YES\nNO\nYES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"a:\\Desktop\\Nothing\\Random\\C\\tmt_document.cpp","group":"local","local":true}
