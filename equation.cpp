@@ -1,4 +1,5 @@
 # include <bits/stdc++.h>
+// Solved
 using namespace std;
 bool check(int a){
     for(int i =2; i<=sqrt(a); i++)
