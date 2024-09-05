@@ -1,29 +1,30 @@
 # include <bits/stdc++.h>
 using namespace std;
 int main(){
-    // solved
     int test;
     cin>>test;
     while(test--){
-        int a,b; 
-        cin>>a>>b;
-        if(b%2==1)
+        int val;
+        cin>>val;
+        vector <pair<int,int>> v(val);
+        for(int i =0; i<val; i++)
         {
-            b +=1;
-            a-=2;
+            int a,b;
+            cin>>a>>b;
+            v[i].first=a;
+            v[i].second=b;
         }
-        if(a>=0)
+        int ans = 0;
+        for(int i =0; i<val; i++)
         {
-            if(a%2==0)
+            for(int j=i+1; j<val; j++)
             {
-                cout<<"Yes\n";
-            }
-            else{
-                cout<<"No\n";
+                for(int k=j+1; k<val; k++)
+                {
+                    
+                }
             }
         }
-        else{
-            cout<<"No\n";
-        }
+
     }
 }
