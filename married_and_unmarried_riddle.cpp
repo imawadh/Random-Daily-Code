@@ -1,6 +1,6 @@
 # include <bits/stdc++.h>
 using namespace std;
-// NOT SOLVED 
+//  SOLVED 
 int main(){
     int test;
     cin>>test;
@@ -8,24 +8,35 @@ int main(){
         string str;
         cin>>str;
         bool flag = false;
+        int size = str.size();
         for(int i=0; i<str.size()-1; i++)
         {
-            if(str[i]=='M' &&  str[i+1] == 'U')
+            if(str[i]=='M' && str[i+1]=='U')
             {
-                
-                cout<<"Yes\n";
                 flag = true;
+                cout<<"YES\n";
                 break;
+                
             }
-            if(str[i]=='M' && (str[i+1]=='?'))
+            if(str[i]=='M' && str[i+1]!='M')
             {
-                if(i!=str.size()-2 && str[i+2]=='U' )
+                while(str[i+1]=='?')
                 {
-                    cout<<"Yes\n";
+                    i++;
+                }
+                if(str[i+1]=='U')
+                {
                     flag = true;
+                    cout<<"YES\n";
                     break;
                 }
             }
+            // if(flag)
+            // {
+            //     cout<<"YES\n";
+            //     break;
+            // }
+            
         }
         if(!flag)
         {
